@@ -1,0 +1,25 @@
+{
+    "name": "graphql/wp-graphql-cognito-authentication",
+    "description": "Cognito Authentication for WPGraphQL",
+    "authors": [
+        {
+            "name": "Christos Miamis",
+            "email": "xmiamis95@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "files": ["src/SyncCognitoJWKS.php"],
+        "psr-4": {
+            "WPGraphQL\\Cognito_Authentication\\": "src/"
+        },
+        "classmap": [
+            "src/"
+        ]
+    }
+}
